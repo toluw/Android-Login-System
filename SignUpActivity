@@ -124,7 +124,7 @@ public class SignUpActivity extends AppCompatActivity {
                         button4.setText("SIGN UP");
                     mTolu = jsonObject.getString("response");
                     Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                       Toast a =  Toast.makeText(getApplicationContext(),"Sign up Succesful",Toast.LENGTH_LONG);
+                       Toast a =  Toast.makeText(getApplicationContext(),mTolu,Toast.LENGTH_LONG);
                         a.setGravity(Gravity.CENTER,0,0);
                         a.show();
                         startActivity(i);
